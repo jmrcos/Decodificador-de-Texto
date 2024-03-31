@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logoAlura.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logoAlura" src="./assets/logoAlura.svg" alt="Logo da Alura">
+    </header>
+    <main class="container">
+        <section class="container-input">         
+            <textarea class="input" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+                <div class="container-info-btns">
+                    <div class="info">
+                        <img src="./assets/!.svg" class="img-alerta"> 
+                    </div>   
+                    <div class="container-btns">
+                        <button class="btn-criptografar" onclick="btnEncriptar()">Criptografar</button>
+                        <button class="btn-descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                    </div>
+                </div>
+        </section>
+        <section class="container-output">     
+            <textarea class="output" cols="20" rows="10"></textarea>
+            <div class="container-output-texto" id="texto"> 
+                <h3 class="titulo">Nenhuma mensagem enconstrada</h3>
+                <p class="paragrafo">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div> 
+            <button class="btn-copiar" onclick="copy()">Copiar</button>
+        </section> 
+    </main>
+    <script src="script.js"></script>       
+</body>
+<footer class="rodape">
+    <p class="rodape__texto">Alura Challenge - Oracle Next Education</p>
+    <p class="rodape__texto"></p>Desenvolvido por <a href="https://github.com/jmrcos" target="_blank"><strong>João Marcos</strong></a></p>
+</footer  
+</html>

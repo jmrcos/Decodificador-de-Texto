@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    ---cor-background-primaria:#F3F5FC;
+    ---cor-background-secundaria:#FFFFFF;
+    ---cor-background-cabecalho-footer:#0A3871 ;
+    ---cor-btn-primaria:#0A3871;
+    ---cor-btn-secundaria:#D8DFE8;
+    ---cor-fonte-primaria:#0A3871;
+    ---cor-fonte-secundaria:#343A40;
+    ---cor-fonte-terciaria:#495057;
+    ---cor-fonte-quaternaria:#FFFFFF;
+    ---cor-hover:#052051;
+
+    ---fonte-primaria: "Inter", sans-serif;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background: var(---cor-background-primaria);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(---cor-fonte-primaria);
+    line-height: 150%;
+    font-size: 1rem;
+}
+
+
+.cabecalho{
+    width: auto;
+    background: var(---cor-background-cabecalho-footer);
+}
+
+.logoAlura{
+    background: transparent;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    filter: brightness(0) invert(1);
+}
+
+.container{
+    display: flex;
+    justify-content:space-between;
+    gap: 80px;
+    margin: 5% 10%;
+    max-width: 100%;
+   
+}
+
+.container-input{
+    width: auto;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+}
+   
+.input{
+    border: none; 
+    resize: none;
+    margin-top: 10%;
+    font-size: 2rem;
+}
+
+    ::placeholder{
+        color: var(---cor-fonte-primaria);
+        
+    }
+        .input:focus{outline: none}
+
+.container-info-btns{
+    margin-bottom: 6%;
+}
+
+.container-btns{
+    display: flex;
+    gap: 24px;  
+    font-size: 1rem;
+}  
+
+.btn-criptografar{
+    background: var(---cor-btn-primaria);
+    color: var(---cor-fonte-quaternaria);
+    width: 50%;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.btn-descriptografar{
+    background: var(---cor-btn-secundaria);
+    width: 50%;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.container-output{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(---cor-background-secundaria);
+    border-radius: 32px;
+    width: 400px;
+    height: 944px;
+}
+
+.output{
+    max-width: 100%;
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: none;
+    background: var(---cor-background-secundaria);
+    background-image: url(./assets/bonecoLupa.svg);
+    background-repeat: no-repeat;
+    resize: none;
+    margin-top: 55%;
+    padding: 0 2%;
+}
+    .output:focus{outline: none;}
+
+.container-output-texto{
+    background: var(---cor-background-secundaria);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 10%;
+    margin-bottom: 55%;
+
+}
+
+.titulo{
+    background: var(---cor-background-secundaria);
+    color: #343A40;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.paragrafo{
+    background: var(---cor-background-secundaria);
+    font-size: 1rem;
+    color: #495057;
+}
+
+.btn-copiar{
+    background: var(---cor-background-secundaria);
+    border-radius: 1.5rem;
+    border: solid 1px var(---cor-btn-primaria);
+    font-size: 1rem;
+    width: 90%;
+    height: 67px;
+    margin-top: 90%;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.rodape {
+    width: auto;
+    padding-top: 1%;
+    color:var(---cor-fonte-quaternaria);
+    background:var(---cor-background-cabecalho-footer);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.rodape__texto {
+    background-color: var(---cor-background-cabecalho-footer);
+    color:var(---cor-fonte-quaternaria);
+    font-size: 1rem;
+
+}
+strong{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: var(---cor-background-cabecalho-footer);
+    color:var(---cor-fonte-quaternaria);
+    font-weight: 1rem;
+}
+
