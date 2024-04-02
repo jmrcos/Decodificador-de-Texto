@@ -64,7 +64,7 @@ function btnDesencriptar(){
         output.value = textoDesencriptado;
         input.value = ''
         output.style.marginTop = '0'
-        btnCopy.style.display = 'block';     
+        btnCopy.style.display = 'block';    
     }
 }
 

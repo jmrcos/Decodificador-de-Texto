@@ -76,6 +76,10 @@
     margin-bottom: 6%;
 }
 
+.info{ 
+    width: 100%;
+}
+
 .container-btns{
     display: flex;
     gap: 24px;  
@@ -86,6 +90,8 @@
     background: var(---cor-btn-primaria);
     color: var(---cor-fonte-quaternaria);
     width: 50%;
+    max-width: auto;
+    min-width: auto;
     height: 67px;
     border-radius: 24px;
     cursor: pointer;
@@ -94,6 +100,8 @@
 .btn-descriptografar{
     background: var(---cor-btn-secundaria);
     width: 50%;
+    max-width: auto;
+    min-width: auto;
     border-radius: 24px;
     cursor: pointer;
 }
@@ -184,3 +192,105 @@ strong{
     font-weight: 1rem;
 }
 
+@media (max-width: 1290px) {
+    .logoAlura{width: auto;}
+    .container{
+        flex: 1 1 auto;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .container-input{
+        width: 80%;
+    }
+    .input{
+        width: 688px;
+        min-height: 48px;
+        height: 288px;
+    }
+    .container-info-btns{
+        gap: 16px;
+        width: auto;
+    }
+    .container-output{
+        width: 80%;
+        position: relative;
+        align-items: center;
+        max-width: 688px;
+        min-height: 133px;
+        height: 343px;
+        max-height: 343px;
+        gap: 32px;
+        bottom: 50px;
+    }
+    .output{
+        border-radius: none;
+        overflow: hidden;
+        background: transparent;
+        position:absolute;
+        padding: 5%;
+        width: 688px;
+        height: 120px;
+        max-height: 80%;
+        top: 10%;
+        flex-wrap:wrap;
+        
+    }
+    .container-output-texto{
+        background: transparent;
+        border: 2rem;
+        width: auto;
+        max-width: 100%;
+        width: 688px;
+        height: 133px;
+        margin: 5%;
+        padding-bottom: 20%;
+        
+    }
+    .btn-copiar{
+        width: 624px;
+        max-width: 80%;
+        height: 67px;
+        padding: 24px;
+        position: relative;
+        margin-bottom: 60%;
+    }
+}
+
+@media (max-width: 685px){
+    .container{
+        justify-content: space-around;
+    }
+    .input{
+        width: 343px;
+        max-width: 50%;
+        height: 595px;
+        min-height: 48px;
+        max-height: 595px;
+    }
+    .container-btns{
+      flex-direction: column;
+      gap: 8px;
+      
+    }
+    .btn-criptografar{
+        width: 343px;
+        height: 67px;
+    }
+    .btn-descriptografar{
+        width: 343px;
+        height: 67px;
+    }
+    .container-output{
+        width: 100%;
+        max-width: 343px;
+        min-height: 186px;
+        height: 595px;
+        max-height: 595px;
+        margin: auto;
+    }
+    .btn-copiar{
+        width: 279px;
+        top: 30%;
+    }
+}
