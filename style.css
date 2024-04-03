@@ -206,19 +206,21 @@ strong{
     .input{
         width: 688px;
         min-height: 48px;
-        height: 288px;
+        height: auto;
+        max-height: 288px;
+        padding-right:10%;
     }
     .container-info-btns{
         gap: 16px;
         width: auto;
     }
     .container-output{
-        width: 80%;
+        width: 688px;
         position: relative;
         align-items: center;
         max-width: 688px;
         min-height: 133px;
-        height: 343px;
+        height: auto;
         max-height: 343px;
         gap: 32px;
         bottom: 50px;
@@ -229,11 +231,10 @@ strong{
         background: transparent;
         position:absolute;
         padding: 5%;
-        width: 688px;
-        height: 120px;
-        max-height: 80%;
+        width: 624px;
+        height: auto;
+        max-height: 180px;
         top: 10%;
-        flex-wrap:wrap;
         
     }
     .container-output-texto{
@@ -257,20 +258,32 @@ strong{
     }
 }
 
-@media (max-width: 685px){
+@media (max-width: 700px){
     .container{
         justify-content: space-around;
+        align-items: center;
+        flex-flow: column wrap;
+           
+    }
+    .container-input{
+        width: auto;
+    
     }
     .input{
         width: 343px;
-        max-width: 50%;
-        height: 595px;
+        max-width: auto;
+        height: auto;
         min-height: 48px;
-        max-height: 595px;
+        max-height: 600px;
+        margin-top: 20%;
+        padding-right: 0;
+    }
+    .info{
+        margin-left: 2%;
     }
     .container-btns{
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
       
     }
     .btn-criptografar{
@@ -282,15 +295,25 @@ strong{
         height: 67px;
     }
     .container-output{
-        width: 100%;
-        max-width: 343px;
+        overflow: hidden;
+        width: 343px;
+        max-width: 100%;
         min-height: 186px;
-        height: 595px;
+        height: auto;
         max-height: 595px;
-        margin: auto;
+    }
+    .output{
+        max-height: 380px;
+        height: auto;
     }
     .btn-copiar{
         width: 279px;
-        top: 30%;
+        top: 170px;
+    }
+    .container-output-texto{
+        position: relative;
+        width: 327px;
+        margin-bottom: 25%;
+
     }
 }
